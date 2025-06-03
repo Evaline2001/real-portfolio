@@ -1,0 +1,252 @@
+Here's your **fully updated portfolio website**, now including all:
+
+* **HTML**: Updated sections from your CV.
+* **CSS**: Same styling as before with minor improvements.
+* **JavaScript**: A simple scroll-to-top button added for a touch of interactivity.
+
+---
+
+### ✅ Final Complete Code: HTML + CSS + JS (in one file)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaline Atieno | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #0b1120;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #1f2937;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .projects li, .experience li, .skills li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f2937;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    .badge {
+      margin-top: 1rem;
+    }
+
+    #scrollBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #0b1120;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaline Faith Atieno</h1>
+    <p>Computer Science Graduate | Aspiring Software Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#languages">Languages</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Evaline, a passionate Computer Science graduate from Kisii University, Kenya, with two years of relevant work experience. 
+      I'm enthusiastic about web development, solving real-world problems with code, and continuous learning. I have strong communication and leadership skills, 
+      previously demonstrated as a Google Developer Student Clubs leader and through supervising projects. 
+      I’m actively seeking a more challenging role in software development.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML, CSS, JavaScript, PHP, Python</li>
+      <li>React, Angular (basic familiarity)</li>
+      <li>Database: MySQL, MongoDB</li>
+      <li>WordPress Website Management</li>
+      <li>Hardware & Software Installation & Maintenance</li>
+      <li>Strong analytical and communication skills</li>
+      <li>Fluent in English and Kiswahili, Intermediate Spanish</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li><strong>Student Management System</strong> – A desktop app to manage student records. [<a href="#">GitHub</a>]</li>
+      <li><strong>Personal Portfolio</strong> – This website! Built with HTML, CSS, and JavaScript. [<a href="#">GitHub</a>]</li>
+      <li><strong>Mushroom Classification System</strong> – A machine learning project using CNN and TensorFlow for mushroom classification.</li>
+      <li><strong>Dream Girl Program Website</strong> – Improved the user experience and speed for a community mentorship program.</li>
+      <li><strong>Jumuia Hospital Website</strong> – Maintained hospital website and assisted with IT services using WordPress.</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="experience">
+      <li><strong>Jumuia Hospital Huruma</strong> – ICT Intern (2023)<br>Maintained hospital website and performed software/hardware support.</li>
+      <li><strong>Rias Technical College</strong> – Computer Packages Instructor (2023)</li>
+      <li><strong>Brainiac High School</strong> – Web Developer (2021)</li>
+      <li><strong>Hope Worldwide Foundation</strong> – Mentorship & Website Contributor (2019)</li>
+      <li><strong>Hope Worldwide Kenya</strong> – Public Health Volunteer (2020–2021)</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Google Developer Student Clubs – Core Member & Leader</li>
+      <li>Two years of relevant work experience</li>
+      <li>KCPE: 389/500 | KCSE: B+</li>
+      <li>Computer Instructor in multiple institutions</li>
+    </ul>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li>English – Advanced</li>
+      <li>Kiswahili – Fluent</li>
+      <li>Spanish – Intermediate</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Singing</li>
+      <li>Travelling</li>
+      <li>Designing and Developing Websites</li>
+      <li>Reading</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:evalineatieno724@gmail.com">evalineatieno724@gmail.com</a></p>
+    <p>Phone: 0799 340 923</p>
+    <p>GitHub: <a href="https://github.com/Evaline2001" target="_blank">github.com/Evaline2001</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/evaline-atieno-614672216/" target="_blank">linkedin.com/in/evaline-atieno</a></p>
+    <div class="badge">
+      <a href="https://developers.google.com/profile/u/Evaline2001" target="_blank">
+        Google Developer Student Clubs Core Member Badge
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Evaline Atieno. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollBtn">↑ Top</button>
+
+  <script>
+    // Show scroll to top button
+    const scrollBtn = document.getElementById('scrollBtn');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
+
+
